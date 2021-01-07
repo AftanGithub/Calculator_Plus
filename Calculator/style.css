@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+
+body{
+    background-color: #6a0dad;
+}
+
+
+
+
+
+td,tr,th,table{
+    border-collapse: collapse;
+    padding: 0%;
+}
+table{
+    margin: auto;
+    margin-top: 15%;
+    box-shadow: 10px 10px 15px rgb(64, 0, 94);
+
+    
+}
+
+input{
+    outline: 0;
+    border: 0;
+    width: 60px;
+    height: 50px;
+    float: left;
+    font-size: 20px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+#screen{
+    width: 200px;
+    margin-bottom: 0;
+    height: 100px;
+    text-align: right;
+    vertical-align: bottom;
+    background-color: #fbb034;
+    background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
+    color: whitesmoke;
+    font-family: Roboto;
+    font-size: 24px;
+
+}
+
+
+input[type="button"]{
+    font-family: Roboto;
+    margin: 0px;
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+}
+input#operator{
+    border-left: 1px solid rgb(189, 189, 189);
+}
+
+input:last-child{
+    border: none;
+}
+
+input[type="button"]:not(#operator,#equal){
+    background-color:#242526;
+    color: white;
+}
+
+input[type="button"]:not(#operator,#equal):hover{
+    background-color: #18191a;
+}
+
+input#equal{
+    background-color: rgba(248, 11, 11, 0.932);
+    color: whitesmoke;
+}
+
+input#equal:hover{
+    background-color: rgb(151, 0, 0);
+    color: white;
+}
+
+input#operator:hover{
+    background-color: rgba(212, 209, 209, 0.986);
+}
+
+#git-icon{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+#git-icon:hover{
+    transform: rotate(360deg);
+    transition: 1s ease-in;
+}

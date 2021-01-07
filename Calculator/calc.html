@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="calculator.png" type="image/x-icon">
+    <title>Calculator +</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <form name="calc">
+
+        <table>
+
+            <!--calculator screen-->
+            <tr>
+                <td colspan="4">
+                    <input type="text" name="screen" id="screen" disabled >
+                </td>
+               
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="button" value="1" name="one" onclick="calc.screen.value +='1'">
+                </td>
+
+                <td>
+                    <input type="button" value="2" name="two" onclick="calc.screen.value +='2'">
+                </td>
+
+                <td>
+                    <input type="button" value="3" name="three" onclick="calc.screen.value +='3'">
+                </td>
+
+                <td>
+                    <input type="button" value="+" name="add" onclick="calc.screen.value +='+'" id="operator">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="button" value="4" name="four" onclick="calc.screen.value +='4'">
+                </td>
+
+                <td>
+                    <input type="button" value="5" name="two" onclick="calc.screen.value +='5'">
+                </td>
+
+                <td>
+                    <input type="button" value="6" name="six" onclick="calc.screen.value +='6'">
+                </td>
+
+                <td>
+                    <input type="button" value="-" name="sub" onclick="calc.screen.value +='-'" id="operator">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="button" value="7" name="seven" onclick="calc.screen.value +='7'">
+                </td>
+
+                <td>
+                    <input type="button" value="8" name="eight" onclick="calc.screen.value +='8'">
+                </td>
+
+                <td>
+                    <input type="button" value="9" name="nine" onclick="calc.screen.value +='9'">
+                </td>
+
+                <td>
+                    <input type="button" value="X" name="prod" onclick="calc.screen.value +='*'" id="operator">
+                </td>
+            </tr>
+
+            
+            <tr>
+                <td>
+                    <input type="button" value="C" name="clear" onclick="calc.screen.value =''">
+                </td>
+
+                <td>
+                    <input type="button" value="0" name="zero" onclick="calc.screen.value +='0'">
+                </td>
+
+                <td>
+                    <input type="button" value="=" name="equal" onclick="calc.screen.value =eval(calc.screen.value)" id="equal">
+                </td>
+                <td>
+                    <input type="button" value="/" name="divide" onclick="calc.screen.value +='/'" id="operator">
+                </td>   
+            </tr>
+        </table>
+
+   </form>
+
+   
+<a href="https://github.com/AftanGithub" title="https://github.com/AftanGithub" ><img src="github.png" alt="github-icon" id="git-icon"></a>
+</body>
+</html>
